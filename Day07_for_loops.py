@@ -1,5 +1,5 @@
 #highest and lowest marks using for loop
-marks=["89","67","98","65","43"]
+marks=[89,67,98,65,43]
 highest=marks[0]
 lowest =marks[0]
 for x in marks:
@@ -20,18 +20,16 @@ for j in "Muskan":
 
 #break
 for k in marks:
-    if k=="98":
+    if k==98:
         break
     print(k)
-
 #continue
 for l in  marks :
-    if l=="98":
+    if l==98:
         continue
     print(l)
 
 #nested loop
-
 name=["Muskan","Aayush","Sanvi"]
 surname =["Batra","Mohindru","Sharma"]
 for y in name:
