@@ -43,3 +43,30 @@ print(f"is number even :{even(num)}")
 
 print(grade(89))
 print(grade(99))
+
+#*args = used when we don't know hoe many arguments we have to pass in function
+#1
+def info(greeting,*names):
+    for name in names:
+        print (f"{greeting} {name}")
+
+info("Hello","Muskan","Aayush","Aanya")
+
+#2
+def total(*args):
+    return sum(args)
+
+print(total(13,15,18,19))
+
+#**kwargs
+#1
+def greetings(greeting,**details):
+    print(f"{greeting} My name is {details["name"]} . I am {details["age"]} years old. I am from {details["college"]}")
+
+greetings("Hello",name="Muskan",age=19,college="LPU")
+
+#2
+def profile(**kwargs):
+    for key ,value in kwargs.items():
+        print(f"{key}: {value}")
+profile(name="Muskan",age=19,college="LPU")
