@@ -24,7 +24,7 @@ mylist=mylist+seclist
 
 marks.sort()              #sort in ascending order
 print(marks)
-marks.sort(reverse="True") #sort in descending order
+marks.sort(reverse=True) #sort in descending order
 bts.sort(key=str.lower)    #sort after doing lower method
 bts.reverse()              #reverse the list
 print(bts)
